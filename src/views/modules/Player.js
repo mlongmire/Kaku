@@ -18,7 +18,7 @@ import Tracker from '../../modules/Tracker';
 import Defer from 'kaku-core/modules/Defer';
 import os from 'os';
 
-TrackInfoFetcher.setPath(App.getPath('userData'))
+TrackInfoFetcher.setPath(App.getPath('userData'));
 
 const _ = L10nManager.get.bind(L10nManager);
 

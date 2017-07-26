@@ -1,0 +1,12 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "semi": 2,
+    "arrow-parens": [2, "always"],
+    "brace-style": [2, "stroustrup", { "allowSingleLine": true }]
+  }
+}

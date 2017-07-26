@@ -66,14 +66,14 @@ class TracksComponent extends Component {
           buttonClass='btn btn-default clean-button'
           iconClass='fa fa-fw fa-trash-o'
           isDisabled={noTracks}
-          onClick={onDeleteAllClick} />
+          onClick={onDeleteAllClick} />;
     }
 
     let trackModeButton;
     if (controls.trackModeButton) {
       trackModeButton =
         <TrackModeButton
-          onTrackModeChange={this._onTrackModeChange}/>
+          onTrackModeChange={this._onTrackModeChange}/>;
     }
 
     let playAllButton;
@@ -84,13 +84,13 @@ class TracksComponent extends Component {
           buttonClass='btn btn-default playall-button'
           iconClass='fa fa-fw fa-play-circle'
           isDisabled={noTracks}
-          onClick={onPlayAllClick} />
+          onClick={onPlayAllClick} />;
     }
 
     let addToPlayQueueButton;
     if (controls.addToPlayQueueButton) {
       addToPlayQueueButton =
-        <AddToPlayQueueButton data={tracks}/>
+        <AddToPlayQueueButton data={tracks}/>;
     }
 
     let noTracksDiv;

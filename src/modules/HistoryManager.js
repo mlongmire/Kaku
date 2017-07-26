@@ -24,14 +24,16 @@ class HistoryManager extends EventEmitter {
   init() {
     if (this._initializedPromise) {
       return this._initializedPromise;
-    } else {
+    }
+ else {
       this._initializedPromise = DB.get('history').catch((error) => {
         if (error.status === 404) {
           return DB.put({
             _id: 'history',
             tracks: []
           });
-        } else {
+        }
+ else {
           throw error;
         }
       })

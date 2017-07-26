@@ -13,7 +13,7 @@ import { Downloader } from 'kaku-core/modules/YoutubeDL';
 
 const _ = L10nManager.get.bind(L10nManager);
 const ytdlDownloader = new Downloader();
-ytdlDownloader.setPath(App.getPath('userData'))
+ytdlDownloader.setPath(App.getPath('userData'));
 
 class AutoUpdater {
   constructor() {

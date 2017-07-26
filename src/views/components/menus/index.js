@@ -22,7 +22,7 @@ class MenusComponent extends Component {
 
     this.state = {
       playlists: []
-    }
+    };
 
     this._showTab = this._showTab.bind(this);
     this._updatePlaylistsStates = this._updatePlaylistsStates.bind(this);

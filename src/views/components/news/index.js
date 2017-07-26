@@ -33,7 +33,7 @@ class NewsComponent extends Component {
         </div>
         <div className="news-component">
           {news.map((eachNews, index) => {
-            return <NewsTag key={index} data={eachNews}/>
+            return <NewsTag key={index} data={eachNews}/>;
           })}
         </div>
       </div>

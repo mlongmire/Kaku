@@ -10,8 +10,8 @@ class PlayQueueComponent extends Component {
       tracks: []
     };
 
-    this._clickToPlayAll = this._clickToPlayAll.bind(this)
-    this._clickToDeleteAll = this._clickToDeleteAll.bind(this)
+    this._clickToPlayAll = this._clickToPlayAll.bind(this);
+    this._clickToDeleteAll = this._clickToDeleteAll.bind(this);
   }
 
   componentDidMount() {
