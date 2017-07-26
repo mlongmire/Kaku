@@ -25,7 +25,7 @@ class HistoryManager extends EventEmitter {
     if (this._initializedPromise) {
       return this._initializedPromise;
     }
- else {
+    else {
       this._initializedPromise = DB.get('history').catch((error) => {
         if (error.status === 404) {
           return DB.put({
@@ -33,7 +33,7 @@ class HistoryManager extends EventEmitter {
             tracks: []
           });
         }
- else {
+        else {
           throw error;
         }
       })
