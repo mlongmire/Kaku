@@ -36,6 +36,7 @@
     "build": "NODE_ENV=production ./bin/build",
     "build:development": "NODE_ENV=development ./bin/build",
     "beforebuild": "./bin/before-build",
+    "beforerelease":"./bin/generate-production-config",
     "release": "npm run build",
     "test": "./node_modules/.bin/mocha -u tdd -t 5000 --reporter dot --compilers js:babel-core/register --require ./tests/unit/setup.js 'tests/unit/*.test.js'",
     "uitest-all": "npm run-script prepare-build && npm run-script uitest",
