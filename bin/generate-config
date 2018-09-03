@@ -26,4 +26,4 @@ apiKeyNames.forEach(function(keyName) {
   apiKeys[keyName] = process.env['K_' + keyName];
 });
 
-fs.writeFileSync('config/api_config.production.json', JSON.stringify(envInfo));
+fs.writeFileSync('config/api_config.production.json', JSON.stringify(apiKeys));
